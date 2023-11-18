@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container-box">
+        <h1 class="title">BMI Calculator</h1>
+        <table>
+            <tr>
+                <td>Weight</td>
+                <td colspan="5">
+                    <input id="weight" type="number"  onkeyup=bmicalculate() placeholder="in Kgs">
+                </td>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>
+                    <input id="height-ft" type="number" onkeyup=bmicalculate() placeholder="in Fts">
+                </td>
+                <td>
+                    <input id="height-in" type="number" onkeyup=bmicalculate() placeholder="in Inches">
+                </td>
+            </tr>
+            <tr>
+                <td>Your BMI</td>
+                <td colspan="5"><input id="output" type="number" readonly></td>
+            </tr>
+            <tr>
+                <td style="background-color: rgb(230, 214, 29); color: white; padding: 5px;">Underweight < 18.5</td>
+                <td style="background-color: rgb(0, 209, 45); color: white; padding: 5px;">Normal 18.5 - 25</td>
+                <td style="background-color: rgb(217, 142, 13); color: white; padding: 5px;">Overweight 25 - 30</td>
+                <td style="background-color: rgb(214, 26, 16); color: white; padding: 5px;">Obese > 30</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+
+   
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
